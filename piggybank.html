@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ratchet template page</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="js/ratchet.js"></script>
+	<script>
+	function myFunction() {
+		var num = (Math.random() *1000);
+		var n = num.toFixed(2);
+		document.getElementById("demo").innerHTML = "&pound;" + n;
+	}
+	</script>
+  </head>
+  <body>
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+        <h1 class=title>Mini Banking</h1><a href="menu.html"><span class="icon icon-home"></span></a>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+       <div class="_card"  style="text-align: center;">
+      <p class="content-padded"></p>Welcome to your piggy bank it is different from others.</p>
+      </p>This piggy bank shows you your pocket money balance!</p>
+      <div class="_card"  style="text-align: center;">
+          <span><img src="img/piggybank.jpg"></span>
+      </div>
+      <div class="_card"  style="text-align: center;">
+          <button class= "btn btn-positive" onclick="myFunction()">Show My Balance</button>
+      </div>
+
+	  <p id="demo" class=title style="position: relative; left: 30px; top:-200px;"></p>
+      </div>
+    </div>
+
+  </body>
+</html>

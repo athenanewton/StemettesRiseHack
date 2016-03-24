@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ratchet template page</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="js/ratchet.js"></script>
+  </head>
+  <body>
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+       <h1 class="title">Mini Banking</h1><a href="menu.html"><span class="icon icon-home"></span></a>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+      <p class="content-padded" style="text-align: center;">What are you spending your money on?</p>
+      <div class="card">
+        <ul class="table-view"  style="text-align: center;">
+         <li>
+             <span><img src="img/bar_graph.jpg" style="width:300px;height:300px;"></span>
+          </li>
+          <li>
+              <strong>You spend £12 on sweets per month</strong>
+            </a>
+          </li>
+          <li>
+              <strong>If you reduce by £5 you'll get to your goal quicker</strong>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </body>
+</html>
